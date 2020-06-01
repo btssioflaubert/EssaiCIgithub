@@ -11,6 +11,7 @@ namespace EssaiCIGitHub
         static void Main(string[] args)
         {
             Console.WriteLine("Bonjour GitHub");
+            Console.WriteLine(" je rajoute une ligne pour un premier commit");
             Console.ReadLine();
         }
     }
