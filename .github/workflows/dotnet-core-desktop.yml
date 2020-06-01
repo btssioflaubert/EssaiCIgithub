@@ -98,7 +98,7 @@ jobs:
       env:
         Appx_Bundle: Always
         #Appx_Bundle_Platforms: x86|x64
-        Appx_Bundle_Platforms: AnyCPU  
+        Appx_Bundle_Platforms: Any CPU  
         Appx_Package_Build_Mode: StoreUpload
         Configuration: ${{ matrix.configuration }}
 
