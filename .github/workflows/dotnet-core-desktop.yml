@@ -54,9 +54,9 @@ jobs:
 
     env:
       Solution_Name: EssaiCIGitHub.sln                       # Replace with your solution name, i.e. MyWpfApp.sln.
-    Test_Project_Path: EssaiCIGitHub.Test\EssaiCIGitHub.Tests.csproj                # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-    Wap_Project_Directory: EssaiCIGitHub.Package   # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-    Wap_Project_Path: EssaiCIGitHub.Package\EssaiCIGitHub.Package.wapproj                 # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+      Test_Project_Path: EssaiCIGitHub.Test\EssaiCIGitHub.Tests.csproj                # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Wap_Project_Directory: EssaiCIGitHub.Package   # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Path: EssaiCIGitHub.Package\EssaiCIGitHub.Package.wapproj                 # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
     - name: Checkout
@@ -98,7 +98,7 @@ jobs:
       env:
         Appx_Bundle: Always
         #Appx_Bundle_Platforms: x86|x64
-       Appx_Bundle_Platforms: AnyCPU  
+        Appx_Bundle_Platforms: AnyCPU  
         Appx_Package_Build_Mode: StoreUpload
         Configuration: ${{ matrix.configuration }}
 
