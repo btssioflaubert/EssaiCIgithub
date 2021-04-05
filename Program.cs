@@ -24,7 +24,10 @@ namespace EssaiCIGitHub
         {
             return a + b;
         }
-      
+        public static int multi(int a, int b)
+        {
+            return a * b;
+        }
         public static void affichage( int a,int b,int c)
         {
             Console.WriteLine("a = " + a);
@@ -40,6 +43,8 @@ namespace EssaiCIGitHub
             Console.WriteLine(" je rajoute une ligne pour un premier commit");
             saisiedonnees(ref A, ref B, ref C);
             C = somme(A, B);
+            affichage(A, B, C);
+            C = multi(A, B);
             affichage(A, B, C);
             Console.ReadLine();
         }
