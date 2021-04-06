@@ -78,7 +78,7 @@ jobs:
     # voir le path
    
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
-    - name: Setup C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe
+    - name: Setup D:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe
       uses: microsoft/setup-msbuild@2008f912f56e61277eefaac6d1888b750582aa16
 
     # Execute all unit tests in the solution
